@@ -1,3 +1,5 @@
+// SWIPER CONTROLLER
+
 var swiper = new Swiper('.swiper-container', {
       effect: 'cube',
       grabCursor: true,
@@ -17,3 +19,15 @@ var swiper = new Swiper('.swiper-container', {
 $(".prev-block").click(function() {
   window.alert(`you Clicked the button`);
 });
+
+// SIDEBAR CONTROLLER
+
+function openNav() {
+  let element = document.getElementById("mySidebar")
+  element.classList.toggle("sidebar")
+}
+
+function closeNav() {
+  console.log("devi implementare closeNav")
+
+}
