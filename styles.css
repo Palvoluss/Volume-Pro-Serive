@@ -51,6 +51,17 @@
 
     }
 
+    h5 {
+        text-transform: capitalize;
+        font-size: 370%;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 0.7px white;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: -5%;
+    }
+
     .navigator {
         position: fixed;
         display: flex;
@@ -73,12 +84,50 @@
         font-size: 20px;
     }
 
+    .header-container {
+        
+    }
+
+    .header-image {
+        background-image:url(./img/stage.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .header-copy {
+        background-color: white;
+        width: 100%;
+        height: 800px;
+        position: relative;
+        box-shadow: inset 0 0 111px -6px black;
+        display: flex;
+        align-items: center;
+    }
+
+    h2.header-copy {
+        padding: 1em;
+        font-weight: 300;
+        letter-spacing: -3px;
+    }
+
+
+
     .swiper-container-cube {
         overflow: scroll;
-        height: auto;
+        height: 800px;
     }
     .swiper-container-cube .swiper-slide {
-        height: 1000px;
+        height: 800px !important;
     }
 
     .swiper-container-cube .swiper-slide-actvie {
@@ -88,15 +137,16 @@
     .swiper-container {
     	width: 100%;
     	left:50%;
-    	margin-left: -50%;
     }
 
+    .swiper-cube .swiper-slide {
+        height: 800px !important;
+
+    }
 
     .swiper-wrapper {
         height: auto;
     }
-
-
 
     .swiper-slide {
     	background-size: cover;
@@ -164,12 +214,12 @@
     .swiper-pagination {
     	z-index: 2;
         position: fixed;
-        left: 50%;
+        left: 50%!important;
         transform: translateX(-50%);
         display: flex;
-        width: 15%;
+        width: 30% !important;
         justify-content: space-between;
-        bottom: 1em;
+        bottom: 1em !important; 
     }
 
     .swiper-pagination > .swiper-pagination-bullet {
@@ -188,7 +238,11 @@
     }
 
     .prev-block {  
-        margin: 20% 0; 
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -236,7 +290,7 @@
         font-size: 1.5emM
     } 
 
-    .sideHidden {
+    /* .sideHidden {
         transition: 1s;
     }
 
@@ -249,4 +303,4 @@
         transform: translateX(-50%);
         background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(55,55,55,0.5735266516516517) 80%);
         
-    }
+    } */
