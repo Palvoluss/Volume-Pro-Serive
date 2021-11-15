@@ -16,9 +16,16 @@ var swiper = new Swiper('.swiper-container', {
       }
     });
 
-$(".prev-block").click(function() {
-  window.alert(`you Clicked the button`);
-});
+    $(".prev-block-copy").click(function() {
+      console.log("clickeeeed");
+      document.getElementById("contact").scrollIntoView();
+    });
+    
+    $(".prev-block").click(function() {
+      console.log("clickeeeed");
+      document.getElementById("contact").scrollIntoView();
+    });
+
 
 // SIDEBAR CONTROLLER
 
