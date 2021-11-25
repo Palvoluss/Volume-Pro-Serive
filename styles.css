@@ -53,14 +53,14 @@
     }
 
     h5 {
-        text-transform: capitalize;
-        font-size: 370%;
+        font-size: 210%;
         font-family: 'Noto Sans KR', sans-serif;
         color: rgba(0, 0, 0, 0);
         -webkit-text-stroke: 0.7px white;
         font-weight: 600;
-        margin-top: 0;
-        margin-bottom: -5%;
+        margin-top: 15%;
+        margin-bottom: 0%;
+        line-height: 1;
     }
 
     .navigator {
@@ -330,6 +330,7 @@
 
     .last-works{
         color: whitesmoke; 
+        margin: 5%;
     }
 
     .contact {
@@ -363,6 +364,7 @@
         font-weight: 100;
         padding: 5% 0%;
         margin: 10% 0;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     .submit {
