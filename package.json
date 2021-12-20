@@ -1,0 +1,30 @@
+{
+  "name": "volume-pro-service",
+  "version": "1.0.0",
+  "description": "Personal website of audio video equip volumeproservice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Palvoluss/Volume-Pro-Serive.git"
+  },
+  "keywords": [
+    "portfolio",
+    "node",
+    "email"
+  ],
+  "author": "Pablomicheletti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Palvoluss/Volume-Pro-Serive/issues"
+  },
+  "homepage": "https://github.com/Palvoluss/Volume-Pro-Serive#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15"
+  }
+}
