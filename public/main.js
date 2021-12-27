@@ -15,15 +15,14 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev'
       }
     });
-
-    $(".prev-block-copy").click(function() {
-      console.log("clickeeeed");
-      document.getElementById("contact").scrollIntoView();
-    });
     
-    $(".prev-block").click(function() {
-      console.log("clickeeeed");
-      document.getElementById("contact").scrollIntoView();
+    $(".prev-block, .prev-block-copy").click(function() {
+      const id = 'contact';
+      const yOffset = -100; 
+      const element = document.getElementById(id);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({top: y, behavior: 'smooth'});
     });
 
 

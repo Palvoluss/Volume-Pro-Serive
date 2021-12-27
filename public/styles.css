@@ -397,6 +397,28 @@
         color: #101010;
     }
 
+    .container-notfound {
+        padding: 5em;
+    }
+
+    .container-notfound h1, h2 {
+        text-align: center;
+    }
+    .container-notfound h2, p {
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .container-notfound .return-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-notfound a {
+        text-decoration: none
+    }
+
     /* .sideHidden {
         transition: 1s;
     }

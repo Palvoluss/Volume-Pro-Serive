@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
 
+app.get('*', (req, res) => {
+    res.sendFile(__dirname + '/public/404.html')
+})
+
 app.listen(port, () => {
     console.log(`Express listen at http://localhost:${port}`)
 })
