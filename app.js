@@ -4,15 +4,15 @@ const { sendMail } = require('./src/controller/nodemailerController')
 const app = express() 
 const port = 3000
 const router = express.Router()
-const  mailOptions = {
-        from: 'Paolo Prova <paulmic20@gmail.com>',
-        to: 'pablomctt@gmail.com',
-        subject: "hello from nodemailer",
-        text: 'hello',
-        html: '<h1>hello</h1'
-    }
+// const  mailOptions = {
+//         from: 'Paolo Prova <paulmic20@gmail.com>',
+//         to: 'pablomctt@gmail.com',
+//         subject: "hello from nodemailer",
+//         text: 'hello',
+//         html: '<h1>hello</h1'
+//     }
 
-    sendMail(mailOptions)
+//     sendMail(mailOptions)
 
     
 app.use(express.static('public'))
