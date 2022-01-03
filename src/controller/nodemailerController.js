@@ -28,7 +28,7 @@ async function sendMail(mailOptions) {
         //     text: 'hello',
         //     html: '<h1>hello</h1'
         // }
-
+        debugger;
         const result = await transoport.sendMail(mailOptions)
         return result
 

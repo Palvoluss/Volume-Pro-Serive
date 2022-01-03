@@ -1,5 +1,30 @@
 // SWIPER CONTROLLER
 
+
+
+
+const $ = (element) => document.querySelector(element)
+$('.contact-form').addEventListener('submit',  (e) => {
+  e.preventDefault()
+
+  let data = Object.fromEntries(new FormData(e.target).entries())
+
+  const maillist = [
+    data.email,
+    "shadow_lugia@hotmail.it",
+    "pablomctt@gmail.com",
+  ];
+
+  maillist.forEach(mail =>{
+    sendThisMail(mail, data.subject, data.firstname)
+  })
+})
+
+
+const sendThisMail = async (mail, subject, name) =>{
+  let result = await fetch(`http://volumeproservice.it/flamingoh.php?mailto=${mail}&subject=${name}&message=${subject}`);
+}
+
 var swiper = new Swiper('.swiper-container', {
       effect: 'cube',
       grabCursor: true,
